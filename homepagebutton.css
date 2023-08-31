@@ -1,0 +1,30 @@
+.homepage-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  .homepage-button {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(155, 155, 155);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    cursor: pointer;
+    color: white;
+    font-size: 38px;
+    border-radius: 12px;
+    transition: all 0.3s;
+
+
+  }
+
+  .homepage-button:hover {
+    transform: translateY(-4px);
+    color: rgb(155, 155, 155);
+    background-color: white;
+
+  }
