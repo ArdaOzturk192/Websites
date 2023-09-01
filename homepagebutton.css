@@ -4,6 +4,7 @@
     left: 0;
     margin-left: 20px;
     margin-top: 30px;
+    
   }
 
   .homepage-button {
@@ -15,9 +16,15 @@
     border-color: rgb(100, 100, 100);
     cursor: pointer;
     color: white;
+    padding-left: 1px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
     font-size: 38px;
     border-radius: 12px;
     transition: all 0.3s;
+    margin: 0; 
 
 
   }
