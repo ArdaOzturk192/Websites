@@ -3,18 +3,24 @@
   <head>
     <title>Websites</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "stylesheet" href = "homepagebutton.css">
   </head>
     
   <body>
-    <a href="index.html" class="homepage-link"><button class="homepage-button"><i class="fas fa-home fa-lg"></i></button></a>
-    
+    <a href = "index.html" class = "homepage-link"><button class = "homepage-button"><i class="fas fa-home fa-lg"></i></button></a>
+    <a href = "https://github.com/Hunter1929/Websites" target = "_blank" class = "gitlink"><button class = "gitbutton"><i class="fa fa-github"></i></button></a>
     <h1> Hunter192's Websites</h1>
     
-    <a href = "Burger Order.html"><button class = "pagebutton">Burger Order</button></a>
-    <a href = "The Brown Bear.html"><button class = "pagebutton">The Brown Bear</button></a>
-    <a href = "Try the cursors.html"><button class = "pagebutton">Try The Cursors</button></a>
-    
+     <div class = row1> 
+      <a href = "Burger Order.html"><button class = "pagebutton">Burger Order</button></a>
+      <a href = "The Brown Bear.html"><button class = "pagebutton">The Brown Bear</button></a>
+      <a><button class = "pagebutton pagebutton2">Coming soon...</button></a>
+     </div>
+
+     <div class = "row2">
+      <a href = "Try the cursors.html"><button class = "pagebutton">Try The Cursors</button></a>
+     </div>
     <p class = "to-be-developed">to be developed...</p>
   </body>
 
@@ -29,13 +35,20 @@
     margin: 0;
     padding: 0;
     font-family: Calibri;
+    
   }
 
   h1 {
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     font-size: 40px;
   }
+
+  .row1 {
+    margin-bottom: 100px;
+  }
+
+
 
   .pagebutton {
     cursor: pointer;
@@ -55,8 +68,11 @@
     color: white;
     border-color: black;
     font-weight: bold;
-
   }
+
+  .pagebutton2 {
+    cursor: default;
+  }  
 
   .pagebutton:hover{
     transform: translateY(-4px);
@@ -65,10 +81,52 @@
   }
 
   .to-be-developed {
-    margin-top: 150px;
+    margin-top: 120px;
     font-size: 24px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
+  }
+
+  .gitlink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 30px;
+
+  }
+
+  .gitbutton {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(155, 155, 155);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    cursor: pointer;
+    color: white;
+    padding-left: 1px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+    font-size: 60px;
+    border-radius: 12px;
+    transition: all 0.3s;
+    margin: 0; 
+
+
+  }
+
+  .gitbutton:hover {
+    transform: translateY(-4px);
+    color: rgb(155, 155, 155);
+    background-color: white;
+  }
+
+  .gitbutton:hover i {
+    transition: transform 0.4s;
+    transform: rotateZ(360deg);
   }
 
 </style>
